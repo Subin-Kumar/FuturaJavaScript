@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="side" type="text" placeholder="Enter a no">
+    <button onclick="f1()">Prime or not</button>
+    <h3 id="out"></h3>
+    <script>
+        function f1() {
+            var f=0
+            var a2 = Number(document.getElementById("side").value)
+            a=a2/2
+            for(i=2;i<a;i++){
+                if(a2%i==0 && i!=a2){
+                    f=1
+                }
+            }
+            if(f==1){
+                document.getElementById("out").innerHTML ="Not a Prime no"
+            }
+            else{
+                document.getElementById("out").innerHTML ="Prime no"
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

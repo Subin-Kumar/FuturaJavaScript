@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a="Hello World"
+        b="Subin"
+        c=a+" "+b
+        document.write(c+"<br>")
+
+        document.write(c.length)
+
+        d="kumar"
+        e=c.concat(" ",d)
+
+        document.write("<br>"+e+"<br>")
+
+        document.write("<br>"+e.substring(2,7))
+
+        document.write("<br>"+e.indexOf("Sub"))
+
+        document.write("<br>"+e.includes("kum"))
+
+        document.write("<br>"+e.replace("World","All"))
+
+        document.write("<br>"+b.toUpperCase())
+        z=b.toLowerCase()
+        document.write(z)
+
+        document.write("<br>"+b.slice(1,4))
+
+        document.write("<br>"+e.substr(2))
+        document.write("<br>"+e.replaceAll("l","ll"))
+
+        k="    sk     "
+        document.write("<br>"+k.trim())
+        kk=k.trimStart()
+        kkk=k.trimEnd()
+        document.write("<br>"+kk)
+        document.write("<br>"+kkk)
+
+        bb=b.padEnd(5,"0")
+        bbb=b.padStart(5," ")
+        document.write("<br>"+bb)
+        document.write("<br>"+bbb)
+
+        document.write("<br>"+b.charAt(1))
+        document.write("<br>"+b.charCodeAt(1))
+
+        st="a,s,d,f,g,h,j,k,l"
+        stt=st.split(",")
+        document.write("<br>"+stt)
+        document.write("<br>"+stt[2])
+        document.write("<br>"+stt[5])
+        document.write("<br>"+typeof(stt))
+
+        document.write("<br>"+e.lastIndexOf("l"))
+
+        document.write("<br>"+e.search("Sub"))
+
+        document.write("<br>"+e.match("Sub"))
+        document.write("<br>"+e.matchAll("l"))
+
+        document.write("<br>"+e.startsWith("He"))
+
+        document.write("<br>"+e.endsWith("He"))
+
+        document.write("<br>"+e.endsWith("He"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sample(cb){
+            setTimeout(() => {
+                cb(10)
+            }, 5000);
+        }
+        function sample1(cb){
+            setTimeout(() => {
+                cb(10)
+            }, 5000);
+        }
+        function sample2(cb){
+            setTimeout(() => {
+                cb(10)
+            }, 5000);
+        }
+
+        sample((val)=>{
+            sample1((val2)=>{
+                sample2((val3)=>{
+                    console.log(val+val2+val3)
+                })
+            })
+        })
+    </script>
+</body>
+</html>

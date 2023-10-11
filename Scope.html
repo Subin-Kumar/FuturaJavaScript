@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            var x=1
+            let y=2
+            document.write(x+"<br>")
+            document.write(y +"<br><br>")
+
+            if(true){
+                var x=11
+                let y=22
+                document.write(x +"<br>")
+                document.write(y+"<br><br>")
+            }
+
+            document.write(x+"var takes the latest value<br>")
+            document.write(y+"<br>")
+        }
+        f1()
+    </script>
+</body>
+</html>

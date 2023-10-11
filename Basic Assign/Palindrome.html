@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="side" type="text" placeholder="Enter a String">
+    <button onclick="f1()">palindrome or Not</button>
+    <h3 id="out"></h3>
+    <script>
+        function f1() {
+            var f = 0
+            var a2 = document.getElementById("side").value
+            var l=a2.length
+            for(i=0,j=l-1;i<=l/2,j>=l/2;i++,j--){
+                console.log(i,j,l)
+                if(a2[i]==a2[j]){
+                    f+=1
+                    console.log(a2[i],a2[j],f)
+                }
+            }
+            
+            if (f>0) {
+                document.getElementById("out").innerHTML = "Palindrome"
+            }
+            else {
+                document.getElementById("out").innerHTML = "Not palindrome"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

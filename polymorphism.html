@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class c1{
+            fun1(){
+                document.write("c1 invoked <br>")
+            }
+        }
+        class c2{
+            fun1(){
+                document.write("c2 invoked")
+            }
+        }
+        var ob1= new c1()
+        var ob2=new c2()
+        ob1.fun1()
+        ob2.fun1()
+
+    </script>
+</body>
+</html>

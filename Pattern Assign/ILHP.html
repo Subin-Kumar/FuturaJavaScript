@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Inverted Left hand Pyramid</h3>
+    <input id="i" type="text" placeholder="enter no of lines">
+    <button onclick="f()">Click </button>
+
+    <script>
+        function f() {
+            v = Number(document.getElementById("i").value)
+            var jj = v+1
+            for (i = v; i >= 0; i--) {
+                console.log("<br>")
+                document.write("<br>")
+                jj -= 1
+                for (j = jj; j <= v; j++) {
+                    console.log("-")
+                    document.write("-")
+                }
+
+                for (k = 0; k <= i; k++) {
+                    console.log("*")
+                    document.write("*")
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>
